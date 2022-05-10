@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "veiculos",
+  "collectionName": "categorias",
   "info": {
-    "name": "veiculos"
+    "name": "categorias",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,13 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "nome": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
+    "slug": {
+      "type": "uid",
+      "targetField": "nome"
     }
   }
 }

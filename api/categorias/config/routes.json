@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/veiculos",
-      "handler": "veiculos.find",
+      "path": "/categorias",
+      "handler": "categorias.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/veiculos/count",
-      "handler": "veiculos.count",
+      "path": "/categorias/count",
+      "handler": "categorias.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/veiculos/:id",
-      "handler": "veiculos.findOne",
+      "path": "/categorias/:id",
+      "handler": "categorias.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/veiculos",
-      "handler": "veiculos.create",
+      "path": "/categorias",
+      "handler": "categorias.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/veiculos/:id",
-      "handler": "veiculos.update",
+      "path": "/categorias/:id",
+      "handler": "categorias.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/veiculos/:id",
-      "handler": "veiculos.delete",
+      "path": "/categorias/:id",
+      "handler": "categorias.delete",
       "config": {
         "policies": []
       }
