@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "name": "vehicle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo",
+      "required": true
+    },
+    "descricao": {
+      "type": "richtext",
+      "required": true
+    },
+    "preco": {
+      "type": "decimal",
+      "required": true
+    },
+    "ano": {
+      "type": "date",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "km": {
+      "type": "decimal"
+    },
+    "placa": {
+      "type": "integer"
+    },
+    "combustivel": {
+      "type": "enumeration",
+      "enum": [
+        "Flex",
+        "Alcool",
+        "Gasolina"
+      ],
+      "required": true
+    },
+    "cambio": {
+      "type": "enumeration",
+      "enum": [
+        "Manual",
+        "Automatico",
+        "Automatizado"
+      ]
+    },
+    "cor": {
+      "type": "enumeration",
+      "enum": [
+        "Azul",
+        "Amarelo",
+        "Branco",
+        "Vermelho",
+        "Preto",
+        "Prata"
+      ],
+      "required": true
+    }
+  }
+}

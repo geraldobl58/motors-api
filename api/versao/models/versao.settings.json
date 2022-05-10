@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categorias",
+  "collectionName": "versaos",
   "info": {
-    "name": "category",
+    "name": "version",
     "description": ""
   },
   "options": {
@@ -19,8 +19,7 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "nome",
-      "required": true
+      "targetField": "nome"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categorias",
+  "collectionName": "items",
   "info": {
-    "name": "category",
+    "name": "item",
     "description": ""
   },
   "options": {
