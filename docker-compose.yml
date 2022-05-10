@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  postgres_strapi_motors:
+    container_name: postgres_strapi_motors
+    hostname: postgres_strapi_motors
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: strapi
+      POSTGRES_DB: strapi
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
