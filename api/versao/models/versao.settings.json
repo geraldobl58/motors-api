@@ -20,6 +20,10 @@
     "slug": {
       "type": "uid",
       "targetField": "nome"
+    },
+    "vehicle": {
+      "via": "version",
+      "model": "vehicle"
     }
   }
 }

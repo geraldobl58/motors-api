@@ -57,8 +57,11 @@
     "km": {
       "type": "decimal"
     },
-    "placa": {
-      "type": "integer"
+    "placa_final": {
+      "type": "integer",
+      "max": 9,
+      "min": 0,
+      "required": true
     },
     "combustivel": {
       "type": "enumeration",
@@ -88,6 +91,23 @@
         "Prata"
       ],
       "required": true
+    },
+    "items": {
+      "via": "vehicles",
+      "collection": "item",
+      "dominant": true
+    },
+    "make": {
+      "via": "vehicle",
+      "model": "categorias"
+    },
+    "localization": {
+      "model": "localization",
+      "via": "vehicle"
+    },
+    "version": {
+      "model": "versao",
+      "via": "vehicle"
     }
   }
 }

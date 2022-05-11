@@ -15,12 +15,16 @@
     "nome": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "slug": {
       "type": "uid",
       "targetField": "nome",
       "required": true
+    },
+    "vehicles": {
+      "via": "items",
+      "collection": "vehicle"
     }
   }
 }

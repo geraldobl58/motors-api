@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categorias",
   "info": {
-    "name": "category",
+    "name": "make",
     "description": ""
   },
   "options": {
@@ -15,12 +15,16 @@
     "nome": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "slug": {
       "type": "uid",
       "targetField": "nome",
       "required": true
+    },
+    "vehicle": {
+      "via": "make",
+      "model": "vehicle"
     }
   }
 }
