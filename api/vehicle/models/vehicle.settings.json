@@ -54,7 +54,7 @@
       "required": true,
       "pluginOptions": {}
     },
-    "km": {
+    "kilometragem": {
       "type": "decimal"
     },
     "placa_final": {
