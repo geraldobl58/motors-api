@@ -30,10 +30,6 @@
       "type": "decimal",
       "required": true
     },
-    "ano": {
-      "type": "date",
-      "required": true
-    },
     "cover": {
       "model": "file",
       "via": "related",
@@ -108,6 +104,10 @@
     "version": {
       "model": "versao",
       "via": "vehicle"
+    },
+    "ano": {
+      "type": "string",
+      "required": true
     }
   }
 }
