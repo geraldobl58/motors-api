@@ -108,6 +108,15 @@
     "ano": {
       "type": "string",
       "required": true
+    },
+    "destaques": {
+      "type": "enumeration",
+      "enum": [
+        "recomendados",
+        "buscados",
+        "vendidos"
+      ],
+      "required": true
     }
   }
 }
