@@ -94,16 +94,16 @@
       "dominant": true
     },
     "make": {
-      "via": "vehicle",
-      "model": "categorias"
+      "model": "categorias",
+      "via": "vehicles"
     },
     "localization": {
       "model": "localization",
-      "via": "vehicle"
+      "via": "vehicles"
     },
     "version": {
       "model": "versao",
-      "via": "vehicle"
+      "via": "vehicles"
     },
     "ano": {
       "type": "string",

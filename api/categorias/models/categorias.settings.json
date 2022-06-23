@@ -22,9 +22,9 @@
       "targetField": "nome",
       "required": true
     },
-    "vehicle": {
+    "vehicles": {
       "via": "make",
-      "model": "vehicle"
+      "collection": "vehicle"
     }
   }
 }
