@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_page_vendidos",
+  "info": {
+    "name": "Vendidos",
+    "icon": "universal-access"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "vehicles": {
+      "collection": "vehicle"
+    }
+  }
+}

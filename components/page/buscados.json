@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_page_buscados",
+  "info": {
+    "name": "Buscados",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "vehicles": {
+      "collection": "vehicle"
+    }
+  }
+}
